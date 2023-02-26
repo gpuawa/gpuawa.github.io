@@ -1,7 +1,7 @@
 async function setUserName() {
     let myHeading = document.querySelector('h1');
-    var name = prompt('ÇëÊäÈëÄãµÄÃû×Ö');
+    var name = prompt('è¯·è¾“å…¥ä½ çš„åå­—');
     localStorage.setItem('name', name);
-    myHeading.textContent = `ÄúºÃ,${name}!`;
+    myHeading.textContent = `æ‚¨å¥½,${name}!`;
 }
-await setUserName();
+setUserName();
