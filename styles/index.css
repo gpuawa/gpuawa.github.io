@@ -6,8 +6,9 @@ body {
 }
 .bg img {
     z-index: 0;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    object-fit: cover;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -39,6 +40,8 @@ body {
     }
 }
 .GPUawa {
+    display: flex;
+    justify-content: center;
     z-index: 1;
     opacity: 0;
     transform: translateY(50px) scale(0.9);
@@ -46,19 +49,12 @@ body {
     user-select: none;
 }
 .GPUawa h1 {
-    margin-top: 20rem;
+    margin-top: 50vh;
+    padding: 0;
     text-align: center;
     color: #3a3a3a;
     font-size: 70px;
     animation: text 1s cubic-bezier(0.45, -0.21, 0.13, 1.16);
-    user-select: none;
-}
-.GPUawa p {
-    letter-spacing: 3px;
-    font-size: 18px;
-    margin-top: 30px;
-    line-height: 40px;
-    animation: text 1.5s cubic-bezier(0.45, -0.21, 0.13, 1.16);
     user-select: none;
 }
 ::-webkit-scrollbar {
@@ -66,7 +62,7 @@ body {
 }
 .tx {
     height: 100vh;
-    margin-top: 70vh;
+    margin-top: 32%;
     text-align: center;
     user-select: none;
 }
@@ -78,8 +74,8 @@ body {
     transform: translate(-50%, -50%);
 }
 .info {
-    font-family: sans-serif;
     margin-top: -80vh;
+    font-family: sans-serif;
     color: #e3dee9;
     text-align: center;
     font-size: x-large;
@@ -88,7 +84,18 @@ body {
 hr {
     width: 90%;
     margin: 0 auto;
-    margin-top: 10vh;
     border: none;
     border-bottom: 2px solid #e3dee9;
+}
+h2 {
+    text-align: center;
+    color: #e3dee9;
+}
+@media (max-width: 768px) {
+    .tx img {
+        margin-top: 40%;
+    }
+    .info {
+        margin-top: -85%;
+    }
 }
