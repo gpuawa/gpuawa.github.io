@@ -1,32 +1,331 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GPUCraft</title>
-    </head>
-    <body>
-        <div class="bg">
-            <img src="https://pic.superbed.cc/item/6640bab6f989f2fb977671a0.webp" alt="bg">
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GPUcraft</title>
+    <meta name="description" content="That's great :D">
+
+    <link rel="icon" type="image/png" sizes="512x512" href="https://pic.superbed.cc/item/65a65a47792284bad68f7308.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@10.2.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/planet-pro-bsb.css">
+</head>
+
+<body data-bs-theme="dark">
+    <!-- 页眉 -->
+    <header id="header" class="sticky-top bsb-tpl-header-sticky bsb-tpl-header-sticky-animationX">
+        <nav class="navbar navbar-expand-lg bsb-navbar bsb-navbar-hover bsb-navbar-caret bsb-tpl-navbar-sticky bg-white border-bottom border-light-subtle"
+            data-bsb-sticky-target="#header">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://pic.superbed.cc/item/6635f9e3f989f2fb9741e83e.png" class="bsb-tpl-logo" alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">菜单</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">主页</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">关于</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">联系</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- 精选 -->
+    <hr style="color:#212529; background-color:#212529;">
+    <div class="container">
+        <div class="swiper bsb-featured-pro-3">
+            <div class="swiper-wrapper mb-5 mb-md-6">
+                <div class="swiper-slide">
+                    <article>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-6 order-1 order-md-0 d-flex align-items-center">
+                                    <div class="card-body p-md-4 p-xl-6 p-xxl-9">
+                                        <div class="entry-header mb-3">
+                                            <ul class="entry-meta list-unstyled d-flex mb-4">
+                                                <li>
+                                                    <a class="d-inline-flex px-2 py-1 link-accent text-accent-emphasis bg-accent-subtle border border-accent-subtle rounded-2 text-decoration-none"
+                                                        href="#!">站务</a>
+                                                </li>
+                                            </ul>
+                                            <h2 class="card-title entry-title display-3 fw-bold mb-4 lh-1">
+                                                <a class="link-dark text-decoration-none" href="#!">🎉GPUCraft
+                                                    V5开张啦🎉</a>
+                                            </h2>
+                                        </div>
+
+                                        <div class="entry-footer">
+                                            <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                                                <li>
+                                                    <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
+                                                        href="#!">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                            fill="currentColor" class="bi bi-calendar3"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                                            <path
+                                                                d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                                        </svg>
+                                                        <span class="ms-2 fs-7">2024/10/26</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 d-flex">
+                                    <img class="img-fluid rounded-end object-fit-cover" loading="lazy"
+                                        src="https://pic.superbed.cc/item/65a65a47792284bad68f7308.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="swiper-pagination position-relative bottom-0"
+                style="--swiper-pagination-color: var(--bs-primary);  --swiper-pagination-bullet-size: 10px;"></div>
         </div>
-        <div class="GPUawa">
-            <h1>GPUawa</h1>
-            <p> </p>
+    </div>
+    </section>
+
+    <!-- 主体 -->
+    <main id="main">
+
+        <!-- 其他预览 -->
+        <div class="container overflow-hidden">
+            <div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
+                <div class="col-12 col-lg-4">
+                    <article>
+                        <div class="card border-0 bg-transparent">
+                            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+                                <a href="#!">
+                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                        src="./assets/img/blog/blog-img-1.jpg" alt="">
+                                </a>
+                                <figcaption>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                    </svg>
+                                    <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">阅读全文</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body m-0 p-0">
+                                <div class="entry-header mb-3">
+                                    <ul class="entry-meta list-unstyled d-flex mb-3">
+                                        <li>
+                                            <a class="d-inline-flex px-2 py-1 link-accent text-accent-emphasis bg-accent-subtle border border-accent-subtle rounded-2 text-decoration-none fs-7"
+                                                href="#!">Coming soon</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="card-title entry-title h4 m-0">
+                                        <a class="link-dark text-decoration-none" href="#!">
+                                            敬请期待
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-0 m-0">
+                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                                    <li>
+                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
+                                            href="#!">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                                <path
+                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                            <span class="ms-2 fs-7">2024/13/32</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <article>
+                        <div class="card border-0 bg-transparent">
+                            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+                                <a href="#!">
+                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                        src="./assets/img/blog/blog-img-2.jpg" alt="">
+                                </a>
+                                <figcaption>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                    </svg>
+                                    <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">阅读全文</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body m-0 p-0">
+                                <div class="entry-header mb-3">
+                                    <ul class="entry-meta list-unstyled d-flex mb-3">
+                                        <li>
+                                            <a class="d-inline-flex px-2 py-1 link-accent text-accent-emphasis bg-accent-subtle border border-accent-subtle rounded-2 text-decoration-none fs-7"
+                                                href="#!">Coming soon</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="card-title entry-title h4 m-0">
+                                        <a class="link-dark text-decoration-none" href="#!">
+                                            敬请期待</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-0 m-0">
+                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                                    <li>
+                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
+                                            href="#!">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                                <path
+                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                            <span class="ms-2 fs-7">2024/13/32</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <article>
+                        <div class="card border-0 bg-transparent">
+                            <figure class="card-img-top mb-4 overflow-hidden bsb-overlay-hover">
+                                <a href="#!">
+                                    <img class="img-fluid bsb-scale bsb-hover-scale-up" loading="lazy"
+                                        src="./assets/img/blog/blog-img-3.jpg" alt="">
+                                </a>
+                                <figcaption>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                        class="bi bi-eye text-white bsb-hover-fadeInLeft" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                                        <path
+                                            d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                                    </svg>
+                                    <h4 class="h6 text-white bsb-hover-fadeInRight mt-2">阅读全文</h4>
+                                </figcaption>
+                            </figure>
+                            <div class="card-body m-0 p-0">
+                                <div class="entry-header mb-3">
+                                    <ul class="entry-meta list-unstyled d-flex mb-3">
+                                        <li>
+                                            <a class="d-inline-flex px-2 py-1 link-accent text-accent-emphasis bg-accent-subtle border border-accent-subtle rounded-2 text-decoration-none fs-7"
+                                                href="#!">Coming soon</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="card-title entry-title h4 m-0">
+                                        <a class="link-dark text-decoration-none" href="#!">
+                                            敬请期待</a>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent p-0 m-0">
+                                <ul class="entry-meta list-unstyled d-flex align-items-center m-0">
+                                    <li>
+                                        <a class="fs-7 link-secondary text-decoration-none d-flex align-items-center"
+                                            href="#!">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+                                                <path
+                                                    d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                                            </svg>
+                                            <span class="ms-2 fs-7">2024/13/32</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <a href="#!" class="btn bsb-btn-2xl btn-primary rounded-pill mt-5 mt-xl-10">全部文章</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr style="color:#212529; background-color:#212529;">
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="bg-light py-3 py-md-5 border-top border-light-subtle">
+            <div class="container overflow-hidden">
+                <div class="row">
+                    <div class="col">
+                        <div class="credits text-secondary text-center mt-2 fs-7">
+                            <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
+                                title="GPUCraft" class="link-secondary text-decoration-none">本网站内容采用 CC BY-NC-SA 4.0
+                                进行许可</a>
+                        </div>
+                        <div class="credits text-secondary text-center mt-2 fs-7">
+                            <a target="_blank" href="http://gpuawa.github.io" title="GPUCraft"
+                                class="link-secondary text-decoration-none">🎊GPUCraft🎊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="tx">
-            <img src="https://pic.superbed.cc/item/6635f9e3f989f2fb9741e83e.png" alt="tx">
-        </div>
-        <div class="info">
-            <p>GPUawa / 努力前行,勇敢追梦</p>
-        </div>
-        <hr>
-        <script src="scripts/index.js"></script>
-        <div class="contact">
-            <h2>联系我</h2>
-            <img src="https://pic.superbed.cc/item/66434397fcada11d37ade0b4.png" alt="bilibili.svg">
-            <img src="https://pic.superbed.cc/item/66434397fcada11d37ade0c3.png" alt="mail.svg">
-            <img src="https://pic.superbed.cc/item/66434397fcada11d37ade0d2.png" alt="qq.svg">
-        </div>
-    </body>
+
+    </footer>
+
+    <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@10.2.0/swiper-bundle.min.js"></script>
+
+    <script src="./assets/controller/planet-pro-bsb.js"></script>
+    <script src="./assets/controller/featured-1.js"></script>
+    <script src="./assets/script/index.js"></script>
+
+</body>
 </html>
