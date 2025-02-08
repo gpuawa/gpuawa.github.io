@@ -21,6 +21,12 @@
             border - radius: 5px;
             z - index: 1000;
         }
+
+        #my - iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
     </style>
 </head>
 
@@ -39,6 +45,8 @@
                 url = 'https://' + url;
             }
             document.getElementById('my - iframe').src = url;
+            // 隐藏输入框
+            document.getElementById('input - wrapper').style.display = 'none';
         }
     </script>
 </body>
